@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Edit Websites</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
-<body>
-
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="row container-fluid">
-        <div class = "col-sm-4 hidden-xs">
-            <div class ="header">
+        <div class="col-sm-4 hidden-xs">
+            <div class="header">
                 <p class="navbar-text pull-left">
-                    <a href="website-list-potrait.html" class="navbar-link">
+                    <a href="website-list.view.client.html" class="navbar-link">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                     </a>
                 </p>
@@ -23,7 +11,7 @@
                     Websites
                 </a>
                 <p class="navbar-text pull-right">
-                    <a href="website-list-potrait.html" class="navbar-link">
+                    <a href="website-list.view.client.html" class="navbar-link">
                         <span class="glyphicon glyphicon-plus"></span>
                     </a>
                 </p>
@@ -31,9 +19,9 @@
         </div>
 
         <div class="col-xs-8">
-            <div class ="navbar-header navbar-right-header">
+            <div class="navbar-header navbar-right-header">
                 <p class="navbar-text pull-left visible-xs">
-                    <a href="website-list-potrait.html" class="navbar-link">
+                    <a href="website-list.view.client.html" class="navbar-link">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                     </a>
                 </p>
@@ -41,7 +29,7 @@
                     Edit Website
                 </a>
                 <p class="navbar-text pull-right">
-                    <a href="website-list-potrait.html" class="navbar-link">
+                    <a href="website-list.view.client.html" class="navbar-link">
                         <span class="glyphicon glyphicon-ok"></span>
                     </a>
                 </p>
@@ -50,17 +38,25 @@
     </div>
 </nav>
 
-<div class ="row container-fluid">
-    <div class ="col-sm-4 hidden-xs list-group-pushed-down">
+<div class="row container-fluid">
+    <div class="col-sm-4 hidden-xs list-group-pushed-down">
         <ul class="list-group">
-            <li class="list-group-item"><a href="page-list.html">Address Book App</a><a href = "website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-            <li class="list-group-item"><a href="page-list.html">Blogger</a><a href = "website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-            <li class="list-group-item"><a href="page-list.html">Blogging App</a><a href = "website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-            <li class="list-group-item"><a href="page-list.html">Script Testing App</a><a href = "website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+            <li class="list-group-item"><a href="../page-list.html">Address Book App</a><a
+                    href="website-edit.view.client.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
+            </li>
+            <li class="list-group-item"><a href="../page-list.html">Blogger</a><a
+                    href="website-edit.view.client.html"><span
+                    class="glyphicon glyphicon-cog pull-right"></span></a></li>
+            <li class="list-group-item"><a href="../page-list.html">Blogging App</a><a
+                    href="website-edit.view.client.html"><span
+                    class="glyphicon glyphicon-cog pull-right"></span></a></li>
+            <li class="list-group-item"><a href="../page-list.html">Script Testing App</a><a
+                    href="website-edit.view.client.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
+            </li>
         </ul>
     </div>
 
-    <div class ="col-sm-8">
+    <div class="col-sm-8">
         <form>
             <div class="form-group form-group-pushed-down">
                 <label for="WebsiteName">Website Name</label>
@@ -70,7 +66,7 @@
                 <label for="description">Description</label>
                 <textarea class="form-control" id="description" placeholder="Description" rows="3"></textarea>
             </div>
-            <a href ="website-list-potrait.html" class ="btn btn-danger">Delete</a>
+            <a href="website-list.view.client.html" class="btn btn-danger">Delete</a>
         </form>
     </div>
 </div>
@@ -79,7 +75,7 @@
     <div class="container-fluid">
         <div class="row navbar-text pull-right">
             <div class="col-xs-3">
-                <a href="profile.html">
+                <a href="../views/user/profile.view.client.html">
                     <span class="glyphicon glyphicon-user"></span>
                 </a>
             </div>
@@ -87,5 +83,3 @@
         </div>
     </div>
 </nav>
-</body>
-</html>

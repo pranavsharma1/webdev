@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>New Websites</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <p class="navbar-text pull-left">
-                <a href="widget-list.html" class="navbar-link">
+                <a href="widget-list.view.client.html" class="navbar-link">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
             </p>
@@ -21,7 +10,7 @@
                 Widget Edit
             </a>
             <p class="navbar-text pull-right">
-                <a href="widget-list.html" class="navbar-link">
+                <a href="widget-list.view.client.html" class="navbar-link">
                     <span class="glyphicon glyphicon-ok"></span>
                 </a>
             </p>
@@ -29,10 +18,9 @@
     </div>
 </nav>
 
-<div class = "container">
-    <div class="container-fluid">
+<div class="container">
     <form>
-        <div class ="form1">
+        <div class="form1">
             <div class="form-group">
                 <label for="pageName">Name</label>
                 <input type="text" class="form-control" id="pageName">
@@ -47,18 +35,11 @@
             </div>
             <div class="form-group">
                 <label for="width">Width</label>
-                <input type="text" class="form-control" id="width" value="100%">
+                <input type="text" class="form-control" id="width" placeholder="Size">
             </div>
-            <div class="form-group">
-                <label for="upload">Upload</label>
-                <input type="file" class="form-control" id="upload">
-            </div>
-            <input type="button" class="btn btn-primary btn-block" value="Upload">
-            <a href = "widget-list.html" class="btn btn-danger btn-block">Delete</a>
+            <input type="button" class="btn btn-danger" value="Delete">
         </div>
     </form>
-    </div>
-
 </div>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
@@ -69,9 +50,7 @@
                     <span class="glyphicon glyphicon-user"></span>
                 </a>
             </div>
-
         </div>
     </div>
 </nav>
-</body>
-</html>
+
