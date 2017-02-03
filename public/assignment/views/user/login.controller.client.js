@@ -3,9 +3,35 @@
         .module("WebAppMaker")
         .controller("LoginController", LoginController)
 
-    function LoginController($scope) {
-        $scope.hello = "hello from login controller";
-        console.log("HEllo from the login controller");
+    function LoginController($location) {
+        var vm = this;
+        vm.login = login;
+
+            function login(username,password){
+            console.log([username,password]);
+            var users = [
+                {username: 'alice',password: 'ewq'},
+                {username: 'bob', password: 'ewq'},
+                {username: 'charlie', password: 'ewq'},
+            ];
+            var user = null;
+            var found = false;
+            for (var u in users ){
+                user = users[u];
+                if(user.username === username && user.password === password) {
+                    console.log("Found the user!");
+                    found = true;
+                    var url = $location.url("/user/123");
+                    break;
+                }
+            }
+            if (!found){
+                vm.error = "No such user!";
+            }
+
+        }
+
+
     }
 
 })();

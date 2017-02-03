@@ -19,15 +19,20 @@
 </nav>
 
 <div class="container">
+
+    {{websites}}
+
     <ul class="list-group">
-        <li class="list-group-item"><a href="../page-list.html">Address Book App</a><a href="#/website/123"><span
-                class="glyphicon glyphicon-cog pull-right"></span></a></li>
-        <li class="list-group-item"><a href="../page-list.html">Blogger</a><a href="#/website/234"><span
-                class="glyphicon glyphicon-cog pull-right"></span></a></li>
-        <li class="list-group-item"><a href="../page-list.html">Blogging App</a><a href="#/website/345"><span
-                class="glyphicon glyphicon-cog pull-right"></span></a></li>
-        <li class="list-group-item"><a href="../page-list.html">Script Testing App</a><a href="#/website/456"><span
-                class="glyphicon glyphicon-cog pull-right"></span></a></li>
+        <li ng-repeat="website in websites" class="list-group-item">
+            <a href="#">{{website.name}}</a>
+            <a href="#/website/123">
+                <span
+                class="glyphicon glyphicon-cog pull-right">
+
+                </span>
+            </a>
+        </li>
+
     </ul>
 </div>
 
