@@ -3,15 +3,20 @@
         .module("WebAppMaker")
         .controller("WebsiteListController", WebsiteListController);
 
-    function WebsiteListController($scope){
-        console.log("Hello from WebsiteListController");
+    function WebsiteListController($routeParams, WebsiteService) {
+        var vm = this;
 
-        var websites = [
-            {"_id":123, "name": "Facebook", "description": "Most popular social network website"},
-            {"_id":345, "name": "Wikipedia", "description":"World's Encyclopedia"}
-        ];
+        vm.userId = parseInt($routeParams['uid']);
 
-        $scope.websites = websites;
+        function init() {
+            vm.websites = WebsiteService.findWebsiteForUser(vm.userId);
+        }
+
+        init();
+
+
+
+
 
     }
 

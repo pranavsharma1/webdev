@@ -1,28 +1,18 @@
 (function(){
     angular
         .module ("WebAppMaker")
-        .controller("ProfileController", ProfileController)
+        .controller("ProfileController", ProfileController);
 
-    function ProfileController($routeParams){
-        var vm = this;
+    function ProfileController($routeParams, UserService) {
+        var vm = this; // John Papa's Design Pattern
 
-        var userId = $routeParams.uid;
+        var userId = parseInt($routeParams.uid);
+        var user = UserService.findUserById(userId);
 
-        console.log(userId);
-
-        var users = [
-            {username: 'alice',password: 'ewq', _id:123},
-            {username: 'bob', password: 'ewq', _id: 234},
-            {username: 'charlie', password: 'ewq', _id:345},
-        ];
-
-        for (var u in users){
-            var user = users[u];
-            if(user._id == userId){
-                console.log(["Found the user", user]);
-            }
+        if (user != null) {
+            vm.user = user;
         }
-    };
+    }
 
 
 })();

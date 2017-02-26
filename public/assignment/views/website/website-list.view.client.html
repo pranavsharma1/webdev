@@ -20,15 +20,17 @@
 
 <div class="container">
 
-    {{websites}}
+    {{model.websites}}
 
     <ul class="list-group">
-        <li ng-repeat="website in websites" class="list-group-item">
+        <li ng-repeat="website in model.websites" class="list-group-item">
             <a href="#">{{website.name}}</a>
-            <a href="#/website/123">
-                <span
-                class="glyphicon glyphicon-cog pull-right">
-
+            <a href="#/user/{{model.userId}}/website/{{website._id}}" class="pull right">
+                <span class="glyphicon glyphicon-cog">
+                </span>
+            </a>
+            <a href="#" class="pull right">
+                <span class="glyphicon glyphicon-play">
                 </span>
             </a>
         </li>
